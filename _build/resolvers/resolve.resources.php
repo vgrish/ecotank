@@ -26,7 +26,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         $resource->fromArray(array(
             'class_key'    => 'modDocument',
             'menuindex'    => 0,
-            'pagetitle'    => 'Главная',
+            'pagetitle'    => 'Септики - для дома и дачи',
             'alias'        => $alias,
             'uri'          => '/',
             'uri_override' => 1,
