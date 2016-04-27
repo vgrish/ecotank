@@ -1,0 +1,183 @@
+.x-grid3-col-actions {
+	padding: 6px 0 6px 6px;
+}
+
+ul.ecotank-row-actions {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.ecotank-row-actions li {
+	float: left;
+}
+
+ul.ecotank-row-actions .btn {
+	padding: 3px;
+	margin-right: 2px;
+	min-width: 26px;
+	font-size: inherit;
+}
+
+.ecotank-grid-row-disabled {
+	font-style: italic;
+	opacity: .6;
+	color: #555;
+}
+
+.ecotank-formpanel {
+	padding-top: 25px;
+}
+
+.ecotank-formpanel .panel-desc {
+	margin-top: 2px;
+	padding: 9px 20px 9px 10px!important;
+}
+
+/*.ecotank-grid .x-panel-tbar-noheader {
+	_margin-top: -10px!important;
+}*/
+
+a.x-menu-item .x-menu-item-text, a.x-menu-item .x-menu-item-text .icon {
+	cursor: pointer;
+}
+
+a.x-menu-item .x-menu-item-text .icon {
+	line-height: 16px;
+	top: auto;
+}
+
+.x-menu-list .icon {
+	min-width: 1em;
+	text-align: center;
+}
+
+.x-menu-list-item:hover .icon {
+	color: inherit !important;
+}
+
+/*
+ul.ecotank-row-actions .actions-menu {width: 40px;}
+ul.ecotank-row-actions .actions-menu:after {content: " \f107";}
+*/
+
+/* icon in button */
+.ext-strict .x-menu-item-icon.fa {
+	left: 6px;
+}
+/* actions menu */
+.btn.actions-menu {width: 40px;}
+.btn.actions-menu:after {content: " \f107";}
+/* actions menu */
+.ecotank-cogs img {
+	_display: none;
+}
+.ecotank-cogs {
+	padding: 3px 20px 3px 6px!important;
+}
+.ecotank-cogs i.fa {
+	padding-right: 3px;
+	width: 15px;
+}
+/* description field */
+p.desc {
+	margin: 20px 0px -30px 40px;
+	max-width: 350px;
+	color: #000;
+}
+
+
+/* expander */
+table.ecotank-expander td {
+	padding-left: 15px;
+}
+table.ecotank-expander {
+	margin: 30px 0px 0px 0px;
+	color: #000;
+}
+table.ecotank-expander td b {
+	text-align: left;
+	margin-right: 20px;
+}
+
+
+/* color */
+.red {
+	color: red !important;
+}
+.green {
+	color: green !important;
+}
+.blue {
+	color: blue !important;
+}
+.yellow {
+	color: goldenrod !important;
+}
+.gray {
+	color: dimgray !important;
+}
+
+/* grid color */
+span.ecotank-grid-color {
+	width: 50px;
+	height: 24px;
+	border-radius: 3px;
+	display: block;
+	margin: -5px 0px -5px 0px;
+}
+
+
+img.ecotank-render-img {
+	height: 10px;
+}
+
+.grid-with-buttons .date-combo .x-form-field-wrap.x-datetime-wrap {
+	margin-top: 0px!important;
+}
+
+.x-grid3-cell-inner.x-grid3-col-ecotank-grid-ico {
+	padding: 4px 10px;
+}
+.x-grid3-cell-inner.x-grid3-col-ecotank-grid-ico img {
+	max-height: 30px;
+}
+
+/* search field */
+.x-field-search-clear,
+.x-field-search-go {border-left: 1px solid #e4e4e4 !important;}
+.x-field-search-clear:hover,
+.x-field-search-go:hover {border-left-color: transparent !important;}
+.x-field-search-clear:before {content: '\f00d' !important;}
+.x-field-search-go {right: 31px !important; border-radius: 0 !important;}
+.x-field-search-go:before {content: '\f002' !important;}
+
+/* search field */
+.x-field-search-clear,
+.x-field-search-go {border-left: 1px solid #e4e4e4 !important;}
+.x-field-search-clear:hover,
+.x-field-search-go:hover {border-left-color: transparent !important;}
+.x-field-search-clear:before {content: '\f00d' !important;}
+.x-field-search-go {right: 31px !important; border-radius: 0 !important;}
+.x-field-search-go:before {content: '\f002' !important;}
+
+/* ecotank-active field */
+.x-field-ecotank-active-clear,
+.x-field-ecotank-active-go {border-left: 1px solid #e4e4e4 !important;}
+.x-field-ecotank-active-clear:hover,
+.x-field-ecotank-active-go:hover {border-left-color: transparent !important;}
+.x-field-ecotank-active-clear:before {content: '\f00d' !important;}
+.x-field-ecotank-active-go {right: 31px !important; border-radius: 0 !important;}
+.x-field-ecotank-active-go:before {content: '\f204' !important;}
+
+
+/* class field */
+.x-field-ecotank-type-clear,
+.x-field-ecotank-type-go {border-left: 1px solid #e4e4e4 !important;}
+.x-field-ecotank-type-clear:hover,
+.x-field-ecotank-type-go:hover {border-left-color: transparent !important;}
+.x-field-ecotank-type-clear:before {content: '\f00d' !important;}
+.x-field-ecotank-type-go {right: 31px !important; border-radius: 0 !important;}
+.x-field-ecotank-type-go:before {content: '\f03a' !important;}
+
+

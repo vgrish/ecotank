@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="ecotank" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="ecotank"
+	   version="1.1">
+
+	<object class="ecotankTank" table="ecotank_tanks" extends="xPDOSimpleObject">
+
+		<field key="model" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="image" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="ico" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="number_of_users" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="size" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="volume" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="power" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="weight" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="old_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="installing_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="discount" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+
+		<field key="rank" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true" default="0" />
+		<field key="main" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+
+		<field key="properties" dbtype="text" phptype="json" null="true" />
+		<field key="description" dbtype="text" phptype="text" null="true" default=""/>
+		<field key="content" dbtype="text" phptype="text" null="true" default=""/>
+
+		<index alias="model" name="model" primary="false" unique="false" type="BTREE">
+			<column key="model" length="" collation="A" null="false"/>
+		</index>
+		<index alias="main" name="main" primary="false" unique="false" type="BTREE">
+			<column key="main" length="" collation="A" null="false"/>
+		</index>
+		<index alias="active" name="active" primary="false" unique="false" type="BTREE">
+			<column key="active" length="" collation="A" null="false"/>
+		</index>
+
+	</object>
+
+
+	<object class="ecotankBioTank" table="ecotank_bio_tanks" extends="xPDOSimpleObject">
+
+		<field key="model" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="image" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="ico" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="number_of_users" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="size" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="volume" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="power" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="weight" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="old_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="installing_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="discount" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="type" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true" default="0" />
+
+		<field key="rank" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true" default="0" />
+		<field key="main" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+
+		<field key="properties" dbtype="text" phptype="json" null="true" />
+		<field key="description" dbtype="text" phptype="text" null="true" default=""/>
+		<field key="content" dbtype="text" phptype="text" null="true" default=""/>
+
+		<index alias="model" name="model" primary="false" unique="false" type="BTREE">
+			<column key="model" length="" collation="A" null="false"/>
+		</index>
+		<index alias="main" name="main" primary="false" unique="false" type="BTREE">
+			<column key="main" length="" collation="A" null="false"/>
+		</index>
+		<index alias="active" name="active" primary="false" unique="false" type="BTREE">
+			<column key="active" length="" collation="A" null="false"/>
+		</index>
+		<index alias="type" name="type" primary="false" unique="false" type="BTREE">
+			<column key="type" length="" collation="A" null="false"/>
+		</index>
+
+	</object>
+
+
+	<object class="ecotankUniTank" table="ecotank_uni_tanks" extends="xPDOSimpleObject">
+
+		<field key="model" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="image" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="ico" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="number_of_users" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="size" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="volume" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="power" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="weight" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="old_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="installing_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="discount" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+
+		<field key="rank" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true" default="0" />
+		<field key="main" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+
+		<field key="properties" dbtype="text" phptype="json" null="true" />
+		<field key="description" dbtype="text" phptype="text" null="true" default=""/>
+		<field key="content" dbtype="text" phptype="text" null="true" default=""/>
+
+		<index alias="model" name="model" primary="false" unique="false" type="BTREE">
+			<column key="model" length="" collation="A" null="false"/>
+		</index>
+		<index alias="main" name="main" primary="false" unique="false" type="BTREE">
+			<column key="main" length="" collation="A" null="false"/>
+		</index>
+		<index alias="active" name="active" primary="false" unique="false" type="BTREE">
+			<column key="active" length="" collation="A" null="false"/>
+		</index>
+
+	</object>
+
+
+	<object class="ecotankMicrob" table="ecotank_microbs" extends="xPDOSimpleObject">
+
+		<field key="model" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="image" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="ico" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="number_of_users" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="size" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="volume" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="power" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="weight" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="old_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="installing_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="discount" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+
+		<field key="rank" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true" default="0" />
+		<field key="main" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+
+		<field key="properties" dbtype="text" phptype="json" null="true" />
+		<field key="description" dbtype="text" phptype="text" null="true" default=""/>
+		<field key="content" dbtype="text" phptype="text" null="true" default=""/>
+
+		<index alias="model" name="model" primary="false" unique="false" type="BTREE">
+			<column key="model" length="" collation="A" null="false"/>
+		</index>
+		<index alias="main" name="main" primary="false" unique="false" type="BTREE">
+			<column key="main" length="" collation="A" null="false"/>
+		</index>
+		<index alias="active" name="active" primary="false" unique="false" type="BTREE">
+			<column key="active" length="" collation="A" null="false"/>
+		</index>
+
+	</object>
+
+
+	<object class="ecotankPogreb" table="ecotank_pogreba" extends="xPDOSimpleObject">
+
+		<field key="model" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="image" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="ico" dbtype="varchar" precision="255" phptype="string" null="true"/>
+		<field key="number_of_users" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="size" dbtype="varchar" precision="100" phptype="string" null="false" default=""/>
+		<field key="volume" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="power" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="weight" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="old_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="installing_price" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="discount" dbtype="decimal" precision="12,2" phptype="float" null="true" default="0"/>
+		<field key="type" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true" default="0" />
+
+		<field key="rank" dbtype="tinyint" precision="1" phptype="integer" attributes="unsigned" null="true" default="0" />
+		<field key="main" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" attributes="unsigned" null="false" default="1" />
+
+		<field key="properties" dbtype="text" phptype="json" null="true" />
+		<field key="description" dbtype="text" phptype="text" null="true" default=""/>
+		<field key="content" dbtype="text" phptype="text" null="true" default=""/>
+
+		<index alias="model" name="model" primary="false" unique="false" type="BTREE">
+			<column key="model" length="" collation="A" null="false"/>
+		</index>
+		<index alias="main" name="main" primary="false" unique="false" type="BTREE">
+			<column key="main" length="" collation="A" null="false"/>
+		</index>
+		<index alias="active" name="active" primary="false" unique="false" type="BTREE">
+			<column key="active" length="" collation="A" null="false"/>
+		</index>
+		<index alias="type" name="type" primary="false" unique="false" type="BTREE">
+			<column key="type" length="" collation="A" null="false"/>
+		</index>
+
+	</object>
+
+</model>

@@ -1,0 +1,500 @@
+@font-face {
+	font-family: 'Bliss M';
+	src: url('../fonts/blisspro-mediumwebfont.eot');
+	src: url('../fonts/blisspro-mediumwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-mediumwebfont.woff') format('woff'),
+	url('../fonts/blisspro-mediumwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-mediumwebfont.svg#bliss_promedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss L';
+	src: url('../fonts/blisspro-lightwebfont.eot');
+	src: url('../fonts/blisspro-lightwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-lightwebfont.woff') format('woff'),
+	url('../fonts/blisspro-lightwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-lightwebfont.svg#bliss_prolight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss LI';
+	src: url('../fonts/blisspro-lightitalicwebfont.eot');
+	src: url('../fonts/blisspro-lightitalicwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-lightitalicwebfont.woff') format('woff'),
+	url('../fonts/blisspro-lightitalicwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-lightitalicwebfont.svg#bliss_prolight_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+@font-face {
+	font-family: 'Bliss MI';
+	src: url('../fonts/blisspro-mediumitalicwebfont.eot');
+	src: url('../fonts/blisspro-mediumitalicwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-mediumitalicwebfont.woff') format('woff'),
+	url('../fonts/blisspro-mediumitalicwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-mediumitalicwebfont.svg#bliss_promedium_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss R';
+	src: url('../fonts/blisspro-regularwebfont.eot');
+	src: url('../fonts/blisspro-regularwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-regularwebfont.woff') format('woff'),
+	url('../fonts/blisspro-regularwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-regularwebfont.svg#bliss_proregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+@font-face {
+	font-family: 'Bliss I';
+	src: url('../fonts/blisspro-italicwebfont.eot');
+	src: url('../fonts/blisspro-italicwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-italicwebfont.woff') format('woff'),
+	url('../fonts/blisspro-italicwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-italicwebfont.svg#bliss_proitalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss H';
+	src: url('../fonts/blisspro-heavywebfont.eot');
+	src: url('../fonts/blisspro-heavywebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-heavywebfont.woff') format('woff'),
+	url('../fonts/blisspro-heavywebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-heavywebfont.svg#bliss_proheavy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss HI';
+	src: url('../fonts/blisspro-heavyitalicwebfont.eot');
+	src: url('../fonts/blisspro-heavyitalicwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-heavyitalicwebfont.woff') format('woff'),
+	url('../fonts/blisspro-heavyitalicwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-heavyitalicwebfont.svg#bliss_proheavy_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+@font-face {
+	font-family: 'Bliss XLI';
+	src: url('../fonts/blisspro-extralightitalicwebfont.eot');
+	src: url('../fonts/blisspro-extralightitalicwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-extralightitalicwebfont.woff') format('woff'),
+	url('../fonts/blisspro-extralightitalicwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-extralightitalicwebfont.svg#bliss_proextralight_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss XBI';
+	src: url('../fonts/blisspro-extrabolditalicwebfont.eot');
+	src: url('../fonts/blisspro-extrabolditalicwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-extrabolditalicwebfont.woff') format('woff'),
+	url('../fonts/blisspro-extrabolditalicwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-extrabolditalicwebfont.svg#bliss_proextrabold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss XL';
+	src: url('../fonts/blisspro-extralightwebfont.eot');
+	src: url('../fonts/blisspro-extralightwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-extralightwebfont.woff') format('woff'),
+	url('../fonts/blisspro-extralightwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-extralightwebfont.svg#bliss_proextralight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss XB';
+	src: url('../fonts/blisspro-extraboldwebfont.eot');
+	src: url('../fonts/blisspro-extraboldwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-extraboldwebfont.woff') format('woff'),
+	url('../fonts/blisspro-extraboldwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-extraboldwebfont.svg#bliss_proextrabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss B';
+	src: url('../fonts/blisspro-boldwebfont.eot');
+	src: url('../fonts/blisspro-boldwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-boldwebfont.woff') format('woff'),
+	url('../fonts/blisspro-boldwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-boldwebfont.svg#bliss_probold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss BI';
+	src: url('../fonts/blisspro-bolditalicwebfont.eot');
+	src: url('../fonts/blisspro-bolditalicwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-bolditalicwebfont.woff') format('woff'),
+	url('../fonts/blisspro-bolditalicwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-bolditalicwebfont.svg#bliss_probold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+@font-face {
+	font-family: 'Bliss XB';
+	src: url('../fonts/blisspro-extraboldwebfont.eot');
+	src: url('../fonts/blisspro-extraboldwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-extraboldwebfont.woff') format('woff'),
+	url('../fonts/blisspro-extraboldwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-extraboldwebfont.svg#bliss_proextrabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss B';
+	src: url('../fonts/blisspro-boldwebfont.eot');
+	src: url('../fonts/blisspro-boldwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-boldwebfont.woff') format('woff'),
+	url('../fonts/blisspro-boldwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-boldwebfont.svg#bliss_probold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+@font-face {
+	font-family: 'Bliss BI';
+	src: url('../fonts/blisspro-bolditalicwebfont.eot');
+	src: url('../fonts/blisspro-bolditalicwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/blisspro-bolditalicwebfont.woff') format('woff'),
+	url('../fonts/blisspro-bolditalicwebfont.ttf') format('truetype'),
+	url('../fonts/blisspro-bolditalicwebfont.svg#bliss_probold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+
+
+@font-face {
+	font-family: 'Round Medium';
+	src: url('../fonts/ff_din_round_pro_-_mediumwebfont.eot');
+	src: url('../fonts/ff_din_round_pro_-_mediumwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ff_din_round_pro_-_mediumwebfont.woff') format('woff'),
+	url('../fonts/ff_din_round_pro_-_mediumwebfont.ttf') format('truetype'),
+	url('../fonts/ff_din_round_pro_-_mediumwebfont.svg#din_round_promedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Round Light';
+	src: url('../fonts/ff_din_round_pro_-_lightwebfont.eot');
+	src: url('../fonts/ff_din_round_pro_-_lightwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ff_din_round_pro_-_lightwebfont.woff') format('woff'),
+	url('../fonts/ff_din_round_pro_-_lightwebfont.ttf') format('truetype'),
+	url('../fonts/ff_din_round_pro_-_lightwebfont.svg#din_round_prolight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Round Black';
+	src: url('../fonts/ff_din_round_pro_-_blackwebfont.eot');
+	src: url('../fonts/ff_din_round_pro_-_blackwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ff_din_round_pro_-_blackwebfont.woff') format('woff'),
+	url('../fonts/ff_din_round_pro_-_blackwebfont.ttf') format('truetype'),
+	url('../fonts/ff_din_round_pro_-_blackwebfont.svg#din_round_problack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Round Regular';
+	src: url('../fonts/ff_din_round_pro_-_regularwebfont.eot');
+	src: url('../fonts/ff_din_round_pro_-_regularwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ff_din_round_pro_-_regularwebfont.woff') format('woff'),
+	url('../fonts/ff_din_round_pro_-_regularwebfont.ttf') format('truetype'),
+	url('../fonts/ff_din_round_pro_-_regularwebfont.svg#dinroundproregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Round Bold';
+	src: url('../fonts/ff_din_round_pro_-_boldwebfont.eot');
+	src: url('../fonts/ff_din_round_pro_-_boldwebfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ff_din_round_pro_-_boldwebfont.woff') format('woff'),
+	url('../fonts/ff_din_round_pro_-_boldwebfont.ttf') format('truetype'),
+	url('../fonts/ff_din_round_pro_-_boldwebfont.svg#din_round_probold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+.tm-showcase a>p {
+	font-family: round bold;
+	font-size: 18px;
+	line-height: 25px;
+	color:#444;
+}
+
+.uk-container .tm-number {
+	font-family: round bold;
+	font-size: 35px;
+	line-height: 30px;
+	color: #f15952;
+	border-bottom: 5px dotted #8bbd8b;
+	border-top: 5px dotted #8bbd8b;
+	background: none;
+	padding: 15px 0;
+	margin: 0px 0px 15px 0px;
+}
+
+h1.tm-title, p.tm-title {
+	text-align:center;
+	font-family:round bold;
+	font-weight:normal;
+	font-size:46px;
+	line-height:48px;
+	color:#444;
+}
+
+.tm-title.celebrity {
+	font-family: round bold;
+	font-weight: normal;
+	font-size: 54px;
+	color: #f15952;
+	_margin: 10px auto 10px;
+}
+
+.tm-title {
+	margin: 20px auto;
+	font-size: 22px;
+	line-height: normal;
+	color: #f15952;
+}
+
+.timer-element {
+	font-family: round bold;
+	font-size: 32pt;
+	font-weight: bold;
+	text-align: center;
+	color: #585858;
+}
+
+.tm-button-time {
+	margin: 35px auto 10px;
+	padding: 17px 54px;
+	font-size: 22px;
+	background-color: #de3232;
+	box-shadow: 0px 3px 0px #992323;
+	color: white;
+	text-shadow: 0px 1px 2px #5C1010;
+	font-family: round bold;
+	display: block;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+	border: none;
+	text-transform: uppercase;
+}
+.tm-button-time:hover {
+	background-color: #992323;
+	box-shadow: 0px 3px 0px #de3232;
+	text-shadow: 0px 1px 2px #de3232;
+}
+
+
+.uk-modal-dialog button[type=submit] {
+	margin: 35px auto 10px;
+	padding: 17px 54px;
+	font-size: 22px;
+	background-color: #8bbd8b;
+	box-shadow: 0px 3px 0px #5B7C5B;
+	color: white;
+	text-shadow: 0px 1px 2px #263426;
+	font-family: round bold;
+	display: block;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+	border: none;
+	text-transform: uppercase;
+}
+.uk-modal-dialog button[type=submit]:hover {
+	background-color: #465E46;
+	box-shadow: 0px 3px 0px #8bbd8b;
+	text-shadow: 0px 1px 2px #263426;
+}
+
+.uk-modal-dialog {
+	border: 3px solid #89d378;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.95);
+}
+.uk-modal-dialog .uk-h2 {
+	font-family: round bold;
+	color: #f15952;
+}
+
+
+.tm-middle-present .empty-wrapper {
+	padding: 25px 10px 12px 35px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #f9f9f9 none repeat scroll 0 0;
+}
+
+
+.uk-margin-large-bottom {
+	margin-bottom: 30px!important;
+}
+
+
+.tm-middle-present .tm-image span {
+	position: relative;
+	line-height: 33px;
+	float: right;
+	_margin: 23% 3% 0 0;
+	padding: 38px 29px;
+	font-size: 34px;
+	background: #de3232;
+	background-color: #de3232;
+	box-shadow: 5px 5px 7px #992323;
+	color: white;
+	text-shadow: 0px 1px 2px #5C1010;
+	font-family: round bold;
+	display: block;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+	border: none;
+}
+
+
+footer {
+	margin: 20px 0 10px;
+	text-align: center;
+	padding: 0;
+}
+
+footer .tm-text {
+	font-family: bliss b;
+	padding: 0 20px;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+footer .tm-extra {
+	font-family: round bold;
+	font-size: 30px;
+	margin: 35px auto 0;
+	border-top: 1px solid #ccc;
+	padding: 15px;
+}
+
+
+a.uk-modal-close.uk-close.uk-close-alt {
+	top: 15px;
+	right: 15px;
+	background: none;
+}
+
+.tm-sale.uk-width-1-1 {
+	font-family: round bold;
+	font-size: 35px;
+	line-height: 40px;
+	color: #f15952;
+}
+
+p {
+	font-family: bliss l;
+}
+
+.tablesaw tbody td {
+	font-family: bliss l;
+}
+.tablesaw tbody td.title strong {
+	font-family: bliss b;
+}
+
+

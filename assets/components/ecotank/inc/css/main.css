@@ -1,0 +1,71 @@
+html{background:#fdfdfd;font-family:'Open Sans',sans-serif}
+body{max-width:960px;margin:0 auto;background:#fff;padding:0!important;font-family:'Open Sans',sans-serif}
+body > div{border:1px solid #e4e4e4;box-shadow:1px 1px 15px rgba(0,0,0,0.05)}
+.uk-modal-page body{padding-right:17px!important}
+
+header{text-align:center}
+header .tm-showcase{border-bottom:1px solid #ccc;background:#fefffd}
+header .tm-showcase > a:first-child{border-left:none}
+header .tm-showcase > a{padding:25px 5px 15px;border-left:1px solid #ccc;color:#010101}
+header .tm-showcase > a:hover{color:#050505;text-decoration:none;background:#fdfdfd}
+header .tm-number{padding:15px 0;border-bottom:1px solid #ccc;font-size:18px;background:#beffbe}
+
+.tm-middle-present{padding:0 45px}
+.tm-middle-present .empty-wrapper{padding:25px 10px 12px 35px;border:1px solid #ccc;border-radius:10px;background:#f9f9f9 none repeat scroll 0 0}
+.tm-middle-present .tm-image img{position:absolute;left:0;top:0}
+.tm-middle-present .tm-image span{position:relative;font-size:34px;color:#fff;line-height:normal;float:right;margin:23% 3% 0 0;background:url(../img/awesome/stick.png) center center no-repeat;padding:38px 29px}
+
+.tm-title{margin:30px auto;font-size:34px;line-height:normal}
+.tm-title.celebrity{font-size: 52px;margin: 70px auto 10px;}
+.tm-text-uppercase{text-transform: uppercase;}
+.tm-size-16{font-size:16px;line-height:20px}
+.tm-size-18{font-size:18px;line-height:20px}
+.tm-size-22{font-size:22px;line-height:24px}
+.tm-size-28{font-size:28px;line-height:32px}
+.tm-size-38{font-size:38px;line-height:32px}
+.tm-size-44{font-size:44px;line-height:32px}
+.tm-size-58{font-size:58px;line-height:38px;color:#010101}
+.tm-size-68{font-size:68px;line-height:58px}
+.tm-size-78{font-size:78px;line-height:78px}
+
+.tm-button-time{display:inline-block;text-align:center;margin:35px auto 10px;border:1px solid #de3232;border-radius:30px;padding:17px 54px;font-size:22px;background:#ea2525;color:#fff}
+.tm-button-time:hover{text-decoration:none;background:#db2424;color:#fff}
+
+.tablesaw img{max-width:100px}
+.tablesaw tbody td{font-size:14px;line-height:20px!important}
+.tablesaw tbody td.title strong{display:block}
+
+footer{margin:20px 0 10px;text-align:center;padding:0 25px}
+footer .tm-extra{margin:35px auto 0;border-top:1px solid #ccc;padding:15px 0 0}
+footer .tm-extra p{margin:10px auto}
+footer .tm-extra .name{float:left}
+footer .tm-extra .date{float:right}
+
+.uk-modal-dialog .uk-h2{text-align:center;border-bottom:1px solid #e4e4e4;padding-bottom:20px;font-size:34px;margin-bottom:20px}
+.uk-modal-dialog input,.uk-modal-dialog textarea{display:block;border:none;background:#E4E4E4;color:#5D5C5C;margin:5px auto;width:70%;padding:15px 20px 13px;font-family:"Lato-Regular",sans-serif;font-size:16px}
+.uk-modal-dialog textarea{color:#9F9F9F;min-height:100px}
+.uk-modal-dialog button[type=submit]{display:block;border:none;margin:20px auto 5px;padding:13px 20px;font-family:"OpenSans",sans-serif;font-size:16px;color:#fff;background:#8bbd8b;border-radius:30px;cursor:pointer}
+
+.uk-modal-close:after{content:url("../img/awesome/close.png")}
+
+
+
+@media (max-width:900px){
+    .tm-middle-present .empty-wrapper {padding: 10px 10px 10px 15px;}
+    .tm-middle-present .empty-wrapper p{font-size: 12px;  margin: 0 0 10px 0;  line-height: 17px;}
+}
+@media (max-width:767px) {
+    .tm-middle-present .tm-image img {  left: 6%;  }
+    .tm-middle-present .tm-image span{margin-bottom: 62%;}
+    .tm-title{font-size: 25px;margin: 15px auto;}
+    .tm-title.celebrity{font-size: 35px;margin: 20px auto;}
+}
+@media (max-width:450px) {
+    .tm-middle-present .tm-image span{margin-bottom: 50%;}
+    .tm-title{font-size: 18px;margin: 20px auto;}
+    .tm-button-time {  padding: 13px 43px;  font-size: 16px;  }
+    header .tm-showcase > a p {display: none}
+}
+@media (max-width:350px) {
+    .tm-middle-present .tm-image span{margin-bottom: 44%;}
+}

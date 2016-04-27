@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang='ru' dir='ltr'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Эко-Танк - 1</title>
+	<link rel='stylesheet' href='css/uikit.min.css'>
+	<link rel='stylesheet' href='css/main.css'>
+	<link rel='stylesheet' href='css/base.css'>
+	<link rel='stylesheet' href='css/tablesaw.css'>
+	<script src='js/jquery.min.js'></script>
+	<script src='js/uikit.min.js'></script>
+	<script src='js/core/modal.min.js'></script>
+	<script src='js/core/smooth-scroll.min.js'></script>
+	<script src='js/components/lightbox.min.js'></script>
+	<script src='js/ecotank.js'></script>
+	<script src='js/tablesaw.js'></script>
+	<meta name='description' content='Документация UIkit на русском языке. Коллекция aдаптивных компонентов с открытым исходным кодом. Написанная автором по 12 апреля 2013 года. Опубликовано в Блог'>
+	<meta name='keywords' content='Blog layout example UIkit, Блог разметка пример: UIkit документация на русском UIkit'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class='uk-container uk-container-center uk-padding-remove'>
+	<header>
+		<div class='tm-showcase uk-width-1-1 uk-grid uk-grid-collapse'>
+			<a class='uk-width-2-10' href='#tank' data-uk-smooth-scroll>
+				<img src='img/elements/tank/septik-tank-1_big.png' alt='' width='600' height='600' />
+				<p>Септик «Танк»</p>
+			</a>
+			<a class='uk-width-2-10' href='#bio' data-uk-smooth-scroll>
+				<img src='img/elements/bio/septik_biotank4_big.png' alt='' width='600' height='600' />
+				<p>Септик «Био-Танк»</p>
+			</a>
+			<a class='uk-width-2-10' href='#tankuni' data-uk-smooth-scroll>
+				<img src='img/elements/uni/tankuni1_big.png' alt='' width='600' height='600' />
+				<p>Септик «Танк-Универсал»</p>
+			</a>
+			<a class='uk-width-2-10' href='#microb' data-uk-smooth-scroll>
+				<img src='img/elements/microb/septik_microb_450_big.png' alt='' width='600' height='600' />
+				<p>Септик «Микроб»</p>
+			</a>
+			<a class='uk-width-2-10' href='#pogreb' data-uk-smooth-scroll>
+				<img src='img/elements/pogreb/pogreb.png' alt='' width='271' height='265' />
+				<p>Погреба</p>
+			</a>
+		</div>
+		<div class='tm-number uk-width-1-1'>
+			8 (800) 555-35-35, 8 (927) 123-45-67
+		</div>
+		<div class='tm-sale uk-width-1-1'>
+			<p>
+				Спецпредложение: Доставка по Владимирской, Ивановской и Нижегородской области в подарок!!!
+			</p>
+		</div>
+	</header>
+
+
+	<div class='main'>
+		<h1 class='tm-title uk-margin-large-top uk-text-center tm-text-uppercase'>Септик ТАНК</h1>
+		<div class='tm-middle-present uk-grid uk-margin-large-bottom'>
+			<div class='tm-image uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10 uk-position-relative'>
+				<img src='img/elements/demo/middle-img.png' alt='' width='600' height='600' />
+				<span>50%<br><small>скидка</small></span>
+			</div>
+			<div class='uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10'>
+				<div class='empty-wrapper'>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+				</div>
+			</div>
+		</div>
+
+		<p class='tm-title celebrity uk-text-center'>от 16000 рублей!</p>
+
+		<div class='tm-timer uk-grid uk-grid-collapse uk-text-center'>
+			<div class='tm-title uk-width-1-1'>До окончания акции осталось:</div>
+			<div class='uk-width-1-1'>
+				<script src='http://megatimer.ru/s/563723aa093b4093a6546c3d4a3199d7.js'></script>
+			</div>
+
+			<a class='tm-button-time' href='#modal' data-uk-modal='{center:true}'>ЗАКАЗАТЬ</a>
+		</div>
+
+		<!--
+		<table class='tablesaw uk-margin-large-bottom' data-tablesaw-mode='columntoggle'>
+			<thead>
+			<tr>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='persist'>&nbsp;</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Модель</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='2'>Кол-во,<br/>польз.чел.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='6'>Размеры<br/>(ДхШхВ),мм.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='5'>Объем,л.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='4'>Производ.<br/>л./сут.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='3'>Масса,кг.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='7'>Цена руб.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='1'>Цена с уст.</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td class='img'><a href='img/elements/demo/middle-img1.jpg' data-uk-lightbox title=''><img src='img/elements/demo/middle-img1.jpg' /></a></td>
+				<td class='title'><strong>Септик ТАНК-1</strong> серия ЭКОНОМ</td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			<tr>
+				<td class='img'><a href='img/elements/demo/middle-img1.jpg' data-uk-lightbox title=''><img src='img/elements/demo/middle-img1.jpg' /></a></td>
+				<td class='title'><strong>Септик ТАНК-1</strong> серия ЭКОНОМ</td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			<tr>
+				<td class='img'><a href='img/elements/demo/middle-img1.jpg' data-uk-lightbox title=''><img src='img/elements/demo/middle-img1.jpg' /></a></td>
+				<td class='title'><strong>Септик ТАНК-1</strong> серия ЭКОНОМ</td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			<tr>
+				<td class='img'><a href='img/elements/demo/middle-img1.jpg' data-uk-lightbox title=''><img src='img/elements/demo/middle-img1.jpg' /></a></td>
+				<td class='title'><strong>Септик ТАНК-1</strong> серия ЭКОНОМ</td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			<tr>
+				<td class='img'><a href='img/elements/demo/middle-img1.jpg' data-uk-lightbox title=''><img src='img/elements/demo/middle-img1.jpg' /></a></td>
+				<td class='title'><strong>Септик ТАНК-1</strong> серия ЭКОНОМ</td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			<tr>
+				<td class='img'><a href='img/elements/demo/middle-img1.jpg' data-uk-lightbox title=''><img src='img/elements/demo/middle-img1.jpg' /></a></td>
+				<td class='title'><strong>Септик ТАНК-1</strong> серия ЭКОНОМ</td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			<tr>
+				<td class='img'><a href='img/elements/demo/middle-img1.jpg' data-uk-lightbox title=''><img src='img/elements/demo/middle-img1.jpg' /></a></td>
+				<td class='title'><strong>Септик ТАНК-1</strong> серия ЭКОНОМ</td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			</tbody>
+		</table>
+
+
+
+		<p class='tm-title uk-text-center' id='tank'>Танк</p>
+		<div class='tm-middle-present uk-grid uk-margin-bottom'>
+			<div class='tm-image uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10 uk-position-relative'>
+				<img src='img/elements/demo/middle-img.png' alt='' width='600' height='600' />
+				<span>50%</span>
+			</div>
+			<div class='uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10'>
+				<div class='empty-wrapper'>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+				</div>
+			</div>
+		</div>
+		<p class='tm-title celebrity uk-text-center'>от 18000 рублей!</p>
+
+		<div class='tm-timer uk-grid uk-grid-collapse uk-text-center'>
+			<div class='tm-title uk-width-1-1'>До окончания акции осталось:</div>
+			<div class='uk-width-1-1'>
+				<script src='http://megatimer.ru/s/563723aa093b4093a6546c3d4a3199d7.js'></script>
+			</div>
+
+			<a class='tm-button-time' href='#modal' data-uk-modal='{center:true}'>ЗАКАЗАТЬ</a>
+		</div>
+
+		-->
+		<table class='tablesaw uk-margin-large-bottom' data-tablesaw-mode='columntoggle'>
+			<thead>
+			<tr>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='persist'>&nbsp;</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Модель</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='2'>Кол-во,<br/>польз.чел.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='6'>Размеры<br/>(ДхШхВ),мм.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='5'>Объем,л.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='4'>Производ.<br/>л./сут.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='3'>Масса,кг.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='7'>Цена руб.</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='1'>Цена с уст.</th>
+			</tr>
+			</thead>
+
+			<tbody>
+
+			<tr>
+				<td class='img'>
+					<a href='img/elements/tank/septik-tank-1_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/tank/septik-tank-1_big.png' />
+				</a></td>
+				<td class='title'><strong>Септик ТАНК-1</strong></td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/tank/septik-tank-2_big.jpg' data-uk-lightbox title=''>
+						<img src='img/elements/tank/septik-tank-2_big.jpg' />
+				</a></td>
+				<td class='title'><strong>Септик ТАНК-2</strong></td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/tank/septik-tank-2_5_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/tank/septik-tank-2_5_big.png' />
+				</a></td>
+				<td class='title'><strong>Септик ТАНК-2.5</strong></td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/tank/septik-tank-3_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/tank/septik-tank-3_big.png' />
+				</a></td>
+				<td class='title'><strong>Септик ТАНК-3</strong></td>
+				<td>1-3</td>
+				<td>1200х1000<br/>х1700</td>
+				<td>1200</td>
+				<td>600</td>
+				<td>85</td>
+				<td>18 000</td>
+				<td>28 000</td>
+			</tr>
+			</tbody>
+		</table>
+
+
+		<p class='tm-title uk-text-center' id='bio'>Био-Танк вертикальный</p>
+		<div class='tm-middle-present uk-grid uk-margin-bottom'>
+			<div class='tm-image uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10 uk-position-relative'>
+				<img src='img/elements/bio/septik_biotank4_big.png' alt='' width='600' height='600' />
+				<span>50%</span>
+			</div>
+			<div class='uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10'>
+				<div class='empty-wrapper'>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+				</div>
+			</div>
+		</div>
+		<p class='tm-title celebrity uk-text-center'>от 52500 рублей!</p>
+
+		<div class='tm-timer uk-grid uk-grid-collapse uk-text-center'>
+			<div class='tm-title uk-width-1-1'>До окончания акции осталось:</div>
+			<div class='uk-width-1-1'>
+				<script src='http://megatimer.ru/s/563723aa093b4093a6546c3d4a3199d7.js'></script>
+			</div>
+
+			<a class='tm-button-time' href='#modal' data-uk-modal='{center:true}'>ЗАКАЗАТЬ</a>
+		</div>
+		<table class='tablesaw uk-margin-large-bottom' data-tablesaw-mode='columntoggle'>
+			<thead>
+			<tr>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='persist'>&nbsp;</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Модель</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='2'>Цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='3'>Старая цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='1'>Цена установки</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='5'>Скидка</th>
+			</tr>
+			</thead>
+
+			<tbody>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik_biotank4_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik_biotank4_big.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК-4 сам*</strong></td>
+				<td>52500</td>
+				<td>61500</td>
+				<td>16700</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik_biotank4_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik_biotank4_big.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК-4 пр**</strong></td>
+				<td>57500</td>
+				<td>67500</td>
+				<td>18100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik_biotank6_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik_biotank6_big.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК-6 сам*</strong></td>
+				<td>60000</td>
+				<td>70500</td>
+				<td>18100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik_biotank6_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik_biotank6_big.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК-6 пр**</strong></td>
+				<td>60000</td>
+				<td>70500</td>
+				<td>18100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik_biotank8_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik_biotank8_big.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК-8 сам*</strong></td>
+				<td>88200</td>
+				<td>0</td>
+				<td>18100</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik_biotank8_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik_biotank8_big.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК-8 пр***</strong></td>
+				<td>95000</td>
+				<td>0</td>
+				<td>18100</td>
+				<td>0</td>
+			</tr>
+			</tbody>
+		</table>
+
+
+
+		<p class='tm-title uk-text-center'>Био-Танк горизонтальный</p>
+		<div class='tm-middle-present uk-grid uk-margin-bottom'>
+			<div class='tm-image uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10 uk-position-relative'>
+				<img src='img/elements/uni/tankuni2_big.png' alt='' width='600' height='600' />
+				<span>50%</span>
+			</div>
+			<div class='uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10'>
+				<div class='empty-wrapper'>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+				</div>
+			</div>
+		</div>
+		<p class='tm-title celebrity uk-text-center'>от 42000 рублей!</p>
+
+		<div class='tm-timer uk-grid uk-grid-collapse uk-text-center'>
+			<div class='tm-title uk-width-1-1'>До окончания акции осталось:</div>
+			<div class='uk-width-1-1'>
+				<script src='http://megatimer.ru/s/563723aa093b4093a6546c3d4a3199d7.js'></script>
+			</div>
+
+			<a class='tm-button-time' href='#modal' data-uk-modal='{center:true}'>ЗАКАЗАТЬ</a>
+		</div>
+		<table class='tablesaw uk-margin-large-bottom' data-tablesaw-mode='columntoggle'>
+			<thead>
+			<tr>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='persist'>&nbsp;</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Модель</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='2'>Цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='3'>Старая цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='1'>Цена установки</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='5'>Скидка</th>
+			</tr>
+			</thead>
+
+			<tbody>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-3.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-3.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 3 сам*</strong></td>
+				<td>42500</td>
+				<td>51700</td>
+				<td>18100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-3.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-3.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 3 пр**</strong></td>
+				<td>47500</td>
+				<td>57700</td>
+				<td>18100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-4a.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-4a.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 4 сам*</strong></td>
+				<td>52500</td>
+				<td>64700</td>
+				<td>18100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-4a.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-4a.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 4 пр**</strong></td>
+				<td>57500</td>
+				<td>71100</td>
+				<td>18100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-2.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-2.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 6 сам*</strong></td>
+				<td>76100</td>
+				<td>0</td>
+				<td>18100</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-2.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-2.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 6 пр**</strong></td>
+				<td>83100</td>
+				<td>0</td>
+				<td>18100</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-2.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-2.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 8 сам*</strong></td>
+				<td>93300</td>
+				<td>0</td>
+				<td>18100</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-8pr_hit.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-8pr_hit.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 8 пр**</strong></td>
+				<td>64000</td>
+				<td>98000</td>
+				<td>18100</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-2.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-2.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 10 сам*</strong></td>
+				<td>110000</td>
+				<td>0</td>
+				<td>18100</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/bio/septik-bio-10pr_hit.png' data-uk-lightbox title=''>
+						<img src='img/elements/bio/septik-bio-10pr_hit.png' />
+					</a></td>
+				<td class='title'><strong>БИОТАНК 10 пр**</strong></td>
+				<td>74000</td>
+				<td>0</td>
+				<td>18100</td>
+				<td>0</td>
+			</tr>
+			</tbody>
+		</table>
+
+
+
+		<p class='tm-title uk-text-center' id='tankuni'>Танк-Универсал</p>
+		<div class='tm-middle-present uk-grid uk-margin-bottom'>
+			<div class='tm-image uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10 uk-position-relative'>
+				<img src='img/elements/uni/tankuni1_big.png' alt='' width='600' height='600' />
+				<span>30%</span>
+			</div>
+			<div class='uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10'>
+				<div class='empty-wrapper'>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+				</div>
+			</div>
+		</div>
+		<p class='tm-title celebrity uk-text-center'>от 28000 рублей!</p>
+
+		<div class='tm-timer uk-grid uk-grid-collapse uk-text-center'>
+			<div class='tm-title uk-width-1-1'>До окончания акции осталось:</div>
+			<div class='uk-width-1-1'>
+				<script src='http://megatimer.ru/s/563723aa093b4093a6546c3d4a3199d7.js'></script>
+			</div>
+
+			<a class='tm-button-time' href='#modal' data-uk-modal='{center:true}'>ЗАКАЗАТЬ</a>
+		</div>
+		<table class='tablesaw uk-margin-large-bottom' data-tablesaw-mode='columntoggle'>
+			<thead>
+			<tr>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='persist'>&nbsp;</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Модель</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='2'>Цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='3'>Старая цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='1'>Цена установки</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='5'>Скидка</th>
+			</tr>
+			</thead>
+
+			<tbody>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/uni/tankuni2_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/uni/tankuni2_big.png' />
+					</a></td>
+				<td class='title'><strong>ТАНК УНИВЕРСАЛ-2</strong></td>
+				<td>28700</td>
+				<td>0</td>
+				<td>33800</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/uni/tankuni2_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/uni/tankuni2_big.png' />
+					</a></td>
+				<td class='title'><strong>ТАНК УНИВЕРСАЛ-2.5</strong></td>
+				<td>31700</td>
+				<td>0</td>
+				<td>38800</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/uni/tankuni2_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/uni/tankuni2_big.png' />
+					</a></td>
+				<td class='title'><strong>ТАНК УНИВЕРСАЛ-3</strong></td>
+				<td>36700</td>
+				<td>0</td>
+				<td>42800</td>
+				<td>0</td>
+			</tr>
+			</tbody>
+		</table>
+
+
+
+		<p class='tm-title uk-text-center' id='microb'>Микроб</p>
+		<div class='tm-middle-present uk-grid uk-margin-bottom'>
+			<div class='tm-image uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10 uk-position-relative'>
+				<img src='img/elements/microb/septik_microb_450_big.png' alt='' width='600' height='600' />
+				<span>50%</span>
+			</div>
+			<div class='uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10'>
+				<div class='empty-wrapper'>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+				</div>
+			</div>
+		</div>
+		<p class='tm-title celebrity uk-text-center'>от 9700 рублей!</p>
+
+		<div class='tm-timer uk-grid uk-grid-collapse uk-text-center'>
+			<div class='tm-title uk-width-1-1'>До окончания акции осталось:</div>
+			<div class='uk-width-1-1'>
+				<script src='http://megatimer.ru/s/563723aa093b4093a6546c3d4a3199d7.js'></script>
+			</div>
+
+			<a class='tm-button-time' href='#modal' data-uk-modal='{center:true}'>ЗАКАЗАТЬ</a>
+		</div>
+		<table class='tablesaw uk-margin-large-bottom' data-tablesaw-mode='columntoggle'>
+			<thead>
+			<tr>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='persist'>&nbsp;</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Модель</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='2'>Цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='3'>Старая цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='1'>Цена установки</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='5'>Скидка</th>
+			</tr>
+			</thead>
+
+			<tbody>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/microb/septik_microb_450_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/microb/septik_microb_450_big.png' />
+					</a></td>
+				<td class='title'><strong>МИКРОБ 450</strong></td>
+				<td>9700</td>
+				<td>15600</td>
+				<td>5000</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/microb/septik_microb_600_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/microb/septik_microb_600_big.png' />
+					</a></td>
+				<td class='title'><strong>МИКРОБ 600</strong></td>
+				<td>12200</td>
+				<td>19500</td>
+				<td>5000</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/microb/septik_microb_750_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/microb/septik_microb_750_big.png' />
+					</a></td>
+				<td class='title'><strong>МИКРОБ 750</strong></td>
+				<td>13700</td>
+				<td>22500</td>
+				<td>5000</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='img/elements/microb/septik_microb_900_big.png' data-uk-lightbox title=''>
+						<img src='img/elements/microb/septik_microb_900_big.png' />
+					</a></td>
+				<td class='title'><strong>МИКРОБ 900</strong></td>
+				<td>14200</td>
+				<td>24000</td>
+				<td>5000</td>
+				<td>30%</td>
+			</tr>
+			</tbody>
+		</table>
+
+
+
+		<p class='tm-title uk-text-center' id='pogreb'>Цилиндрический</p>
+		<div class='tm-middle-present uk-grid uk-margin-bottom'>
+			<div class='tm-image uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10 uk-position-relative'>
+				<img src='img/elements/demo/middle-img.png' alt='' width='600' height='600' />
+				<span>50%</span>
+			</div>
+			<div class='uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10'>
+				<div class='empty-wrapper'>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+				</div>
+			</div>
+		</div>
+		<p class='tm-title celebrity uk-text-center'>от 59000 рублей!</p>
+
+		<div class='tm-timer uk-grid uk-grid-collapse uk-text-center'>
+			<div class='tm-title uk-width-1-1'>До окончания акции осталось:</div>
+			<div class='uk-width-1-1'>
+				<script src='http://megatimer.ru/s/563723aa093b4093a6546c3d4a3199d7.js'></script>
+			</div>
+
+			<a class='tm-button-time' href='#modal' data-uk-modal='{center:true}'>ЗАКАЗАТЬ</a>
+		</div>
+		<table class='tablesaw uk-margin-large-bottom' data-tablesaw-mode='columntoggle'>
+			<thead>
+			<tr>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='persist'>&nbsp;</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Модель</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='2'>Цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='3'>Старая цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='1'>Цена установки</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='5'>Скидка</th>
+			</tr>
+			</thead>
+
+			<tbody>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>1500х2300</td>
+				<td>59000</td>
+				<td>80000</td>
+				<td>24500</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>1800х2300</td>
+				<td>73000</td>
+				<td>100000</td>
+				<td>35700</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>2000х2300</td>
+				<td>87000</td>
+				<td>120000</td>
+				<td>44100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>2200х2300</td>
+				<td>101000</td>
+				<td>140000</td>
+				<td>53000</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>2400х2300</td>
+				<td>115000</td>
+				<td>160000</td>
+				<td>63000</td>
+				<td>30%</td>
+			</tr>
+			</tbody>
+		</table>
+
+
+
+		<p class='tm-title uk-text-center'>Прямоугольный</p>
+		<div class='tm-middle-present uk-grid uk-margin-bottom'>
+			<div class='tm-image uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10 uk-position-relative'>
+				<img src='img/elements/demo/middle-img.png' alt='' width='600' height='600' />
+				<span>50%</span>
+			</div>
+			<div class='uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10'>
+				<div class='empty-wrapper'>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+					<p>В комплект Септиков ТАНК® серии ЭКОНОМ уже включена стоимость удлинительной горловины D 500 H 500 + крышка D 510. </p>
+					<p>Подробности уточняйте у наших специалистов по телефонам: 8 (495) 788-77-25 и 8 (800) 333-50-70</p>
+				</div>
+			</div>
+		</div>
+		<p class='tm-title celebrity uk-text-center'>от 48000 рублей!</p>
+
+		<div class='tm-timer uk-grid uk-grid-collapse uk-text-center'>
+			<div class='tm-title uk-width-1-1'>До окончания акции осталось:</div>
+			<div class='uk-width-1-1'>
+				<script src='http://megatimer.ru/s/563723aa093b4093a6546c3d4a3199d7.js'></script>
+			</div>
+
+			<a class='tm-button-time' href='#modal' data-uk-modal='{center:true}'>ЗАКАЗАТЬ</a>
+		</div>
+		<table class='tablesaw uk-margin-large-bottom' data-tablesaw-mode='columntoggle'>
+			<thead>
+			<tr>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='persist'>&nbsp;</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Модель</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='2'>Цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='3'>Старая цена</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='1'>Цена установки</th>
+				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='5'>Скидка</th>
+			</tr>
+			</thead>
+
+			<tbody>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong> 1200х1200х1500</td>
+				<td>48000</td>
+				<td>65000</td>
+				<td>23100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>1200х1200х1750</td>
+				<td>53000</td>
+				<td>72000</td>
+				<td>26600</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>1500х1500х1750</td>
+				<td>87000</td>
+				<td>120000</td>
+				<td>44100</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>2200х2300</td>
+				<td>66000</td>
+				<td>90000</td>
+				<td>42600</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>1500х1500х2000</td>
+				<td>73000</td>
+				<td>101000</td>
+				<td>47600</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>2000х1500х1750</td>
+				<td>85000</td>
+				<td>118000</td>
+				<td>48600</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>2000х1500х2000</td>
+				<td>92000</td>
+				<td>128000</td>
+				<td>54600</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>2000х2000х2000</td>
+				<td>111000</td>
+				<td>155000</td>
+				<td>56600</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>2600х1800х2000</td>
+				<td>118000</td>
+				<td>165000</td>
+				<td>65600</td>
+				<td>30%</td>
+			</tr>
+			<tr>
+				<td class='img'>
+					<a href='#' data-uk-lightbox title=''>
+					</a></td>
+				<td class='title'><strong>Погреб</strong>4000х2000х2000</td>
+				<td>185000</td>
+				<td>260000</td>
+				<td>112000</td>
+				<td>30%</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<footer>
+		<div class='tm-number uk-width-1-1'>
+			8 (800) 555-35-35, 8 (927) 123-45-67
+		</div>
+		<div class='tm-text'>Модели самой популярной серии септиков ТАНК® не имеют аналогов среди продукции других российских производителей, И СЕГОДНЯ НОСЯТ ЗВАНИЕ “НАРОДНЫЙ СЕПТИК №1”. Здесь на официальном сайте производителя септика Танк Вы найдете полную информацию о технологических особенностях и преимуществах наших моделей, что позволит вам самостоятельно выбрать автономную канализацию под ваши требования и нужды.</div>
+		<div class='tm-extra'>
+			<p class='name'>@ Эко-Сфера</p>
+			<p class='date'>2016</p>
+			<span class='uk-clearfix'> </span>
+		</div>
+	</footer>
+
+</div>
+
+<div id='modal' class='uk-modal'>
+	<div style='' class='uk-modal-dialog'>
+		<a class='uk-modal-close uk-close'></a>
+		<p class='uk-h2'>Форма заказа</p>
+		<form method='post' class='ajax_form'>
+			<input id='af_name' name='name' value='' placeholder='Ваше имя' type='text'>
+			<input id='af_phone' name='phone' value='' placeholder='Номер телефона' type='text'>
+			<textarea id='af_message' name='message' placeholder='Текст сообщения, по желанию'></textarea>
+			<button type='submit' class='btn btn-primary'>Отправить заявку</button>
+			<input name='af_action' value='d434b5abb8c3f7d941a925e2c1523cc4' type='hidden'>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
