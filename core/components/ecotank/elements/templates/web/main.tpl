@@ -14,6 +14,7 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<meta name='description' content=''>
 	<meta name='author' content=''>
+	<meta name='yandex-verification' content='7e0dbfcc147739c0' />
 	{% endblock %}
 
 	{% block head_script -%}
@@ -698,6 +699,7 @@
 	</div>
 </div>
 
+{% include 'chunk|et.metrika' %}
 
 </body>
 </html>
