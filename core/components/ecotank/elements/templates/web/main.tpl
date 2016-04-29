@@ -12,9 +12,10 @@
 	<meta charset='{{ modx.config['modx_charset'] }}'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	<meta name='description' content=''>
+	<meta name='description' content='{{ modx.resource.introtext }}'>
 	<meta name='author' content=''>
 	<meta name='yandex-verification' content='7e0dbfcc147739c0' />
+	<link href='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/logos/eco-tank.jpg' rel='shortcut icon' type='image/x-icon' />
 	{% endblock %}
 
 	{% block head_script -%}
@@ -537,14 +538,6 @@
 
 			<tr>
 				<td class='img'>
-					{%- if row.image -%}
-					<a href='{{ row.image }}' data-uk-lightbox title=''>
-						<img src='{{ row.ico }}'/>
-					</a>
-					{%- else -%}
-					<a href='#' data-uk-lightbox title=''>
-					</a></td>
-					{%- endif -%}
 				</td>
 				<td class='title'><strong>{{ row.model }}</strong></td>
 				<td>{{ row.size }}</td>
@@ -612,14 +605,6 @@
 
 			<tr>
 				<td class='img'>
-					{%- if row.image -%}
-					<a href='{{ row.image }}' data-uk-lightbox title=''>
-						<img src='{{ row.ico }}'/>
-					</a>
-					{%- else -%}
-					<a href='#' data-uk-lightbox title=''>
-					</a></td>
-				{%- endif -%}
 				</td>
 				<td class='title'><strong>{{ row.model }}</strong></td>
 				<td>{{ row.size }}</td>
@@ -644,7 +629,11 @@
 			{{ modx.resource.introtext }}
 		</div>
 		<div class='tm-extra'>
-			<p class='name'>@ {{ modx.config['site_name'] }}</p>
+			<p class='name'>
+				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/logos/eco-tank.jpg' alt='{{ modx.config['site_name'] }}'
+					 width='50' height='50'/>
+				{{ modx.config['site_name'] }}
+			</p>
 			<p class='date'>2016</p>
 			<span class='uk-clearfix'> </span>
 		</div>
@@ -700,6 +689,7 @@
 </div>
 
 {% include 'chunk|et.metrika' %}
+{% include 'chunk|et.jivosite' %}
 
 </body>
 </html>

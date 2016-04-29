@@ -1,5 +1,9 @@
 Changelog for ecotank.
 
+1.0.3-beta (29.04.2016)
+==============
+- Many changes
+
 1.0.2-beta (27.04.2016)
 ==============
 - Add "metrika"

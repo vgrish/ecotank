@@ -5,6 +5,7 @@ $chunks = array();
 $tmp = array(
     'et.sale'       => array('file' => 'sale'),
     'et.metrika'    => array('file' => 'metrika'),
+    'et.jivosite'   => array('file' => 'jivosite'),
     'et.form.order' => array('file' => 'form.order'),
     'et.mail.order' => array('file' => 'mail.order'),
 );

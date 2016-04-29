@@ -4,7 +4,7 @@
 define('PKG_NAME', 'ecotank');
 define('PKG_NAME_LOWER', strtolower(PKG_NAME));
 
-define('PKG_VERSION', '1.0.2');
+define('PKG_VERSION', '1.0.3');
 define('PKG_RELEASE', 'beta');
 define('PKG_AUTO_INSTALL', true);
 define('PKG_NAMESPACE_PATH', '{core_path}components/' . PKG_NAME_LOWER . '/');
@@ -45,22 +45,22 @@ define('BUILD_SNIPPET_STATIC', false);
 define('BUILD_PLUGIN_STATIC', false);
 
 $BUILD_VALIDATORS = array(
-    'extras'
+   // 'extras'
 );
 
 $BUILD_RESOLVERS = array(
-    'extension',
-    'tables',
+//    'extension',
+//    'tables',
 
-    'tank',
-    'biotank',
-    'unitank',
-    'microb',
-    'pogreb',
+//    'tank',
+//    'biotank',
+//    'unitank',
+//    'microb',
+//    'pogreb',
     
-    'setup2',
-    'setup',
+//    'setup2',
+//    'setup',
 
-    'resources',
-    'setting',
+//    'resources',
+//    'setting',
 );
