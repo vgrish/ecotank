@@ -187,6 +187,33 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         ));
         $model->save();
 
+        if (!$model = $modx->getObject($cls, array('model' => 'Инфильтратор'))) {
+            $model = $modx->newObject($cls);
+            $model->set('rank', 100);
+        }
+        $model->fromArray(array(
+            'model'            => 'Инфильтратор',
+            'image'            => '',
+            'ico'              => 'assets/components/ecotank/inc/img/elements/demo/septik-tank-infiltrator_ico.png',
+            'number_of_users'  => '-',
+            'size'             => '1800х800х400',
+            'volume'           => 0,
+            'power'            => 400,
+            'weight'           => 18,
+            'price'            => 5000,
+            'old_price'        => 0,
+            'installing_price' => 0,
+            'discount'         => '',
+
+            'description' => 'серия ЭКОНОМ',
+            'content'     => '',
+
+            'main'   => 0,
+            'active' => 1,
+            'type'   => 1
+        ));
+        $model->save();
+
         /* --------------------------------------------------------------------------- */
 
         if (!$model = $modx->getObject($cls, array('model' => 'БИОТАНК 3 сам*', 'type' => 2))) {
@@ -209,9 +236,9 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
 
             'description' => 'Серия САМ - самотёчный',
 
-            'main'   => 1,
-            'active' => 1,
-            'type'   => 2,
+            'main'    => 1,
+            'active'  => 1,
+            'type'    => 2,
             'content' => 'Септик БИОТАНК® <br><br>- долгожданная новинка энергозависимого септика для частных домов постоянного проживания,
              которая отличается компактностью и простотой конструкции.<br><br>
                 Бесперебойная работа септика БИОТАНК® обеспечивается компрессором, 
@@ -467,6 +494,32 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         ));
         $model->save();
 
+        if (!$model = $modx->getObject($cls, array('model' => 'Инфильтратор'))) {
+            $model = $modx->newObject($cls);
+            $model->set('rank', 100);
+        }
+        $model->fromArray(array(
+            'model'            => 'Инфильтратор',
+            'image'            => '',
+            'ico'              => 'assets/components/ecotank/inc/img/elements/demo/septik-tank-infiltrator_ico.png',
+            'number_of_users'  => '-',
+            'size'             => '1800х800х400',
+            'volume'           => 0,
+            'power'            => 400,
+            'weight'           => 18,
+            'price'            => 5000,
+            'old_price'        => 0,
+            'installing_price' => 0,
+            'discount'         => '',
+
+            'description' => 'серия ЭКОНОМ',
+            'content'     => '',
+
+            'main'   => 0,
+            'active' => 1,
+            'type'   => 2
+        ));
+        $model->save();
 
         break;
     case xPDOTransport::ACTION_UNINSTALL:

@@ -180,6 +180,33 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         ));
         $model->save();
 
+        if (!$model = $modx->getObject($cls, array('model' => 'Инфильтратор'))) {
+            $model = $modx->newObject($cls);
+            $model->set('rank', 100);
+        }
+        $model->fromArray(array(
+            'model'            => 'Инфильтратор',
+            'image'            => '',
+            'ico'              => 'assets/components/ecotank/inc/img/elements/demo/septik-tank-infiltrator_ico.png',
+            'number_of_users'  => '-',
+            'size'             => '1800х800х400',
+            'volume'           => 0,
+            'power'            => 400,
+            'weight'           => 18,
+            'price'            => 5000,
+            'old_price'        => 0,
+            'installing_price' => 0,
+            'discount'         => '',
+
+            'description' => 'серия ЭКОНОМ',
+            'content'     => '',
+
+            'main'   => 0,
+            'active' => 1,
+            'type'   => 1
+        ));
+        $model->save();
+
         break;
     case xPDOTransport::ACTION_UNINSTALL:
         break;

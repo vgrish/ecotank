@@ -14,8 +14,9 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<meta name='description' content='{{ modx.resource.introtext }}'>
 	<meta name='author' content=''>
-	<meta name='yandex-verification' content='7e0dbfcc147739c0' />
-	<link href='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/logos/eco-tank.jpg' rel='shortcut icon' type='image/x-icon' />
+	<meta name='yandex-verification' content='7e0dbfcc147739c0'/>
+	<link href='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/logos/eco-tank.jpg' rel='shortcut icon'
+		  type='image/x-icon'/>
 	{% endblock %}
 
 	{% block head_script -%}
@@ -87,7 +88,7 @@
 		{% set ecotankTank = runSnippet("pdoResources",{
 		"class":"ecotankTank",
 		"includeContent":1,
-		"limit":10,
+		"limit":15,
 		"totalVar":"total1",
 		"sortby":"rank",
 		"sortdir":"ASC",
@@ -134,29 +135,29 @@
 			</tr>
 			</thead>
 			<tbody>
-		{%- endif -%}
+			{%- endif -%}
 
-		<tr>
-			<td class='img'>
-				{%- if row.image -%}
-				<a href='{{ row.image }}' data-uk-lightbox title=''>
+			<tr>
+				<td class='img'>
+					{%- if row.image -%}
+					<a href='{{ row.image }}' data-uk-lightbox title=''>
+						<img src='{{ row.ico }}'/>
+					</a>
+					{%- else -%}
 					<img src='{{ row.ico }}'/>
-				</a>
-				{%- else -%}
-				<img src='{{ row.ico }}'/>
-				{%- endif -%}
-			</td>
-			<td class='title'><strong>{{ row.model }}</strong></td>
-			<td>{{ row.number_of_users }}</td>
-			<td>{{ row.size }}</td>
-			<td>{{ row.volume|number_format(0) }}</td>
-			<td>{{ row.power|number_format(0) }}</td>
-			<td>{{ row.weight|number_format(0) }}</td>
-			<td>{{ row.price|number_format(0) }}</td>
-			<td>{{ (row.price + row.installing_price)|number_format(0) }}</td>
-		</tr>
+					{%- endif -%}
+				</td>
+				<td class='title'><strong>{{ row.model }}</strong></td>
+				<td>{{ row.number_of_users }}</td>
+				<td>{{ row.size }}</td>
+				<td>{{ row.volume|number_format(0) }}</td>
+				<td>{{ row.power|number_format(0) }}</td>
+				<td>{{ row.weight|number_format(0) }}</td>
+				<td>{{ row.price|number_format(0) }}</td>
+				<td>{{ (row.price + row.installing_price)|number_format(0) }}</td>
+			</tr>
 
-		{%- if loop.last -%}
+			{%- if loop.last -%}
 			</tbody>
 		</table>
 		{%- endif -%}
@@ -169,7 +170,7 @@
 		{% set ecotankBioTank1 = runSnippet("pdoResources",{
 		"class":"ecotankBioTank",
 		"includeContent":1,
-		"limit":10,
+		"limit":15,
 		"totalVar":"total2",
 		"sortby":"rank",
 		"sortdir":"ASC",
@@ -249,7 +250,7 @@
 		{% set ecotankBioTank2 = runSnippet("pdoResources",{
 		"class":"ecotankBioTank",
 		"includeContent":1,
-		"limit":10,
+		"limit":15,
 		"totalVar":"total3",
 		"sortby":"rank",
 		"sortdir":"ASC",
@@ -330,7 +331,7 @@
 		{% set ecotankUniTank = runSnippet("pdoResources",{
 		"class":"ecotankUniTank",
 		"includeContent":1,
-		"limit":10,
+		"limit":15,
 		"totalVar":"total4",
 		"sortby":"rank",
 		"sortdir":"ASC",
@@ -405,13 +406,12 @@
 		{%- endfor -%}
 
 
-
 		<p class='tm-title uk-text-center' id='microb'>Микроб</p>
 
 		{% set ecotankMicrob = runSnippet("pdoResources",{
 		"class":"ecotankMicrob",
 		"includeContent":1,
-		"limit":10,
+		"limit":15,
 		"totalVar":"total5",
 		"sortby":"rank",
 		"sortdir":"ASC",
@@ -484,13 +484,12 @@
 		{%- endfor -%}
 
 
-
 		<p class='tm-title uk-text-center' id='pogreb'>Погреб - Прямоугольный</p>
 
 		{% set ecotankPogreb = runSnippet("pdoResources",{
 		"class":"ecotankPogreb",
 		"includeContent":1,
-		"limit":10,
+		"limit":15,
 		"totalVar":"total6",
 		"sortby":"rank",
 		"sortdir":"ASC",
@@ -552,12 +551,12 @@
 
 		{%- endfor -%}
 
-		<p class='tm-title uk-text-center' >Погреб - Цилиндрический</p>
+		<p class='tm-title uk-text-center'>Погреб - Цилиндрический</p>
 
 		{% set ecotankPogreb = runSnippet("pdoResources",{
 		"class":"ecotankPogreb",
 		"includeContent":1,
-		"limit":10,
+		"limit":15,
 		"totalVar":"total7",
 		"sortby":"rank",
 		"sortdir":"ASC",
@@ -630,7 +629,8 @@
 		</div>
 		<div class='tm-extra'>
 			<p class='name'>
-				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/logos/eco-tank.jpg' alt='{{ modx.config['site_name'] }}'
+				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/logos/eco-tank.jpg'
+					 alt='{{ modx.config['site_name'] }}'
 					 width='50' height='50'/>
 				{{ modx.config['site_name'] }}
 			</p>

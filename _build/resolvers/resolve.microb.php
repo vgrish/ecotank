@@ -36,7 +36,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'main'   => 1,
             'active' => 1,
 
-            'content'     => 'Септик МИКРОБ - это абсолютно новая серия минисептиков для комфортного проживания в небольших пространствах, например, дачных и гостевых домиках, для бань, а так же временного проживания в момент строительства, и в качестве ливневой канализации.<br><br>
+            'content' => 'Септик МИКРОБ - это абсолютно новая серия минисептиков для комфортного проживания в небольших пространствах, например, дачных и гостевых домиках, для бань, а так же временного проживания в момент строительства, и в качестве ливневой канализации.<br><br>
 
 Корпус септика МИКРОБ и инфильтратора (который служит приемником сточных вод из септика и распределяет их на поле фильтрации) достаточно прочный, выполнен из полиэтилена низкого давления, температурный режим до -30С.
 
@@ -123,6 +123,32 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         ));
         $model->save();
 
+        if (!$model = $modx->getObject($cls, array('model' => 'Инфильтратор'))) {
+            $model = $modx->newObject($cls);
+            $model->set('rank', 100);
+        }
+        $model->fromArray(array(
+            'model'            => 'Инфильтратор',
+            'image'            => '',
+            'ico'              => 'assets/components/ecotank/inc/img/elements/demo/septik-tank-infiltrator_ico.png',
+            'number_of_users'  => '-',
+            'size'             => '1800х800х400',
+            'volume'           => 0,
+            'power'            => 400,
+            'weight'           => 18,
+            'price'            => 5000,
+            'old_price'        => 0,
+            'installing_price' => 0,
+            'discount'         => '',
+
+            'description' => 'серия ЭКОНОМ',
+            'content'     => '',
+
+            'main'   => 0,
+            'active' => 1,
+            'type'   => 1
+        ));
+        $model->save();
 
         break;
     case xPDOTransport::ACTION_UNINSTALL:
