@@ -6,8 +6,9 @@ body > div{border:1px solid #e4e4e4;box-shadow:1px 1px 15px rgba(0,0,0,0.05)}
 header{text-align:center}
 header .tm-showcase{border-bottom:1px solid #ccc;background:#fefffd}
 header .tm-showcase > a:first-child{border-left:none}
-header .tm-showcase > a{padding:25px 5px 15px;border-left:1px solid #ccc;color:#010101}
+header .tm-showcase > a{padding:25px 5px 15px;border-left:1px solid #ccc;color:#010101;box-sizing:border-box;}
 header .tm-showcase > a:hover{color:#050505;text-decoration:none;background:#fdfdfd}
+header .tm-showcase > a img{max-width:180px;width:90%}
 header .tm-number{padding:15px 0;border-bottom:1px solid #ccc;font-size:18px;background:#beffbe}
 
 .tm-middle-present{padding:0 45px}

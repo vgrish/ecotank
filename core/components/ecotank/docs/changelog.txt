@@ -1,5 +1,9 @@
 Changelog for ecotank.
 
+1.0.5-beta (27.05.2016)
+==============
+- Change "main.css"
+
 1.0.3-beta (29.04.2016)
 ==============
 - Many changes
