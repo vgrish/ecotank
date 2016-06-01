@@ -28,7 +28,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'weight'           => 85,
             'price'            => 22900,
             'old_price'        => 34900,
-            'installing_price' => 24000,
+            'installing_price' => 17000,
             'discount'         => '30%',
 
             'description' => 'серия ЭКОНОМ',
@@ -66,7 +66,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'weight'           => 130,
             'price'            => 29900,
             'old_price'        => 50500,
-            'installing_price' => 35000,
+            'installing_price' => 20000,
             'discount'         => '30%',
 
             'description' => 'серия ЭКОНОМ',
@@ -92,7 +92,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'weight'           => 140,
             'price'            => 33500,
             'old_price'        => 58300,
-            'installing_price' => 38000,
+            'installing_price' => 25000,
             'discount'         => '30%',
 
             'description' => 'серия ЭКОНОМ',
@@ -118,7 +118,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'weight'           => 150,
             'price'            => 38900,
             'old_price'        => 70000,
-            'installing_price' => 45000,
+            'installing_price' => 30000,
             'discount'         => '30%',
 
             'description' => 'серия ЭКОНОМ',
@@ -129,6 +129,31 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         ));
         $model->save();
 
+        if (!$model = $modx->getObject($cls, array('model' => 'Септик ТАНК-4'))) {
+            $model = $modx->newObject($cls);
+            $model->set('rank', $modx->getCount($cls));
+        }
+        $model->fromArray(array(
+            'model'            => 'Септик ТАНК-4',
+            'image'            => 'assets/components/ecotank/inc/img/elements/tank/septik-tank-4_big.png',
+            'ico'              => 'assets/components/ecotank/inc/img/elements/tank/septik-tank-4_small.png',
+            'number_of_users'  => '7-9',
+            'size'             => '3600х1000х1700',
+            'volume'           => 3600,
+            'power'            => 1800,
+            'weight'           => 225,
+            'price'            => 62000,
+            'old_price'        => 85000,
+            'installing_price' => 35000,
+            'discount'         => '30%',
+
+            'description' => 'серия ЭКОНОМ',
+            'content'     => '',
+
+            'main'   => 0,
+            'active' => 1,
+        ));
+        $model->save();
 
         if (!$model = $modx->getObject($cls, array('model' => 'Инфильтратор'))) {
             $model = $modx->newObject($cls);

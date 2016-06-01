@@ -44,20 +44,19 @@ define('BUILD_CHUNK_STATIC', false);
 define('BUILD_SNIPPET_STATIC', false);
 define('BUILD_PLUGIN_STATIC', false);
 
-$BUILD_VALIDATORS = array(
-   // 'extras'
+$BUILD_VALIDATORS = array(// 'extras'
 );
 
 $BUILD_RESOLVERS = array(
 //    'extension',
 //    'tables',
 
-//    'tank',
+ //   'tank',
 //    'biotank',
 //    'unitank',
 //    'microb',
 //    'pogreb',
-    
+
 //    'setup2',
 //    'setup',
 
