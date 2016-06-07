@@ -73,6 +73,17 @@ ecotank.panel.Main = function (config) {
                     class: 'ecotankPogreb',
                     cls: 'main-wrapper'
                 }]
+            }, {
+                title: _('ecotank_kesson'),
+                layout: 'anchor',
+                items: [{
+                    html: _('ecotank_kesson_intro'),
+                    cls: 'panel-desc'
+                }, {
+                    xtype: 'ecotank-grid-kesson',
+                    class: 'ecotankKesson',
+                    cls: 'main-wrapper'
+                }]
             }]
         }]
     });

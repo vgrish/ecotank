@@ -25,3 +25,7 @@ $_lang['ecotank_microb_intro'] = 'Панель управления септик
 $_lang['ecotank_pogreb'] = 'Погреб';
 $_lang['ecotank_pogreb_desc'] = 'Управление изделиями "Погреб"';
 $_lang['ecotank_pogreb_intro'] = 'Панель управления изделиями "Погреб".';
+
+$_lang['ecotank_kesson'] = 'Кессон';
+$_lang['ecotank_kesson_desc'] = 'Управление изделиями "Кессон"';
+$_lang['ecotank_kesson_intro'] = 'Панель управления изделиями "Кессон".';

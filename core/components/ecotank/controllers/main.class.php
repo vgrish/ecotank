@@ -35,6 +35,7 @@ class ecotankMainManagerController extends ecotankMainController
             'unitank' => true,
             'microb'  => true,
             'pogreb'  => true,
+            'kesson'  => true
         ));
 
         $script = 'Ext.onReady(function() {

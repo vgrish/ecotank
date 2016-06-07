@@ -19,7 +19,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         }
         $model->fromArray(array(
             'model'            => 'Погреб 1500х2300',
-            'image'            => 'assets/components/ecotank/inc/img/elements/pogreb/pogreb.png',
+            'image'            => 'assets/components/ecotank/inc/img/elements/pogreb/pogreb_circle.png',
             'ico'              => '',
             'number_of_users'  => '',
             'size'             => '1500х2300',

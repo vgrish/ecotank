@@ -19,7 +19,8 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'ecotankBioTank',
             'ecotankUniTank',
             'ecotankMicrob',
-            'ecotankPogreb'
+            'ecotankPogreb',
+            'ecotankKesson'
         );
         foreach ($objects as $tmp) {
             $manager->createObjectContainer($tmp);

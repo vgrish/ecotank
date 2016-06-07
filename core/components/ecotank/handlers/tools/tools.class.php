@@ -290,6 +290,11 @@ class Tools implements ecotankToolsInterface
             $controller->addLastJavascript($this->config['jsUrl'] . 'mgr/pogreb/pogreb.grid.js');
         }
 
+        if (!empty($opts['kesson'])) {
+            $controller->addLastJavascript($this->config['jsUrl'] . 'mgr/kesson/kesson.window.js');
+            $controller->addLastJavascript($this->config['jsUrl'] . 'mgr/kesson/kesson.grid.js');
+        }
+
     }
 
 

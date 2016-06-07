@@ -44,35 +44,30 @@
 	{% block header -%}
 	<header>
 		<div class='tm-showcase uk-width-1-1 uk-grid uk-grid-collapse'>
-			<a class='uk-width-1-6' href='#tank' data-uk-smooth-scroll>
+			<a class='uk-width-2-10' href='#tank' data-uk-smooth-scroll>
 				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/tank/septik-tank-1_big.png' alt=''
 					 width='600' height='600'/>
 				<p>Септик «Танк»</p>
 			</a>
-			<a class='uk-width-1-6' href='#bio' data-uk-smooth-scroll>
+			<a class='uk-width-2-10' href='#bio' data-uk-smooth-scroll>
 				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/bio/septik_biotank4_big.png' alt=''
 					 width='600' height='600'/>
 				<p>Септик «Био-Танк»</p>
 			</a>
-			<a class='uk-width-1-6' href='#tankuni' data-uk-smooth-scroll>
+			<a class='uk-width-2-10' href='#tankuni' data-uk-smooth-scroll>
 				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/uni/tankuni1_big.png' alt=''
 					 width='600' height='600'/>
 				<p>Септик «Танк-Универсал»</p>
 			</a>
-			<a class='uk-width-1-6' href='#microb' data-uk-smooth-scroll>
+			<a class='uk-width-2-10' href='#microb' data-uk-smooth-scroll>
 				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/microb/septik_microb_450_big.png'
 					 alt='' width='600' height='600'/>
 				<p>Септик «Микроб»</p>
 			</a>
-			<a class='uk-width-1-6' href='#pogreb' data-uk-smooth-scroll>
+			<a class='uk-width-2-10' href='#pogreb' data-uk-smooth-scroll>
 				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/pogreb/pogreb.png' alt='' width='271'
 					 height='265'/>
 				<p>Погреба</p>
-			</a>
-			<a class='uk-width-1-6' href='#kesson' data-uk-smooth-scroll>
-				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/kesson/kesson.jpg' alt='' width='271'
-					 height='265'/>
-				<p>Кессоны</p>
 			</a>
 		</div>
 		<div class='tm-number uk-width-1-1'>
@@ -573,74 +568,6 @@
 		{#{ log(ecotankPogreb) }#}
 
 		{%- for row in ecotankPogreb -%}
-
-		{% if row.main %}
-		<div class='tm-middle-present uk-grid uk-margin-large-bottom'>
-			<div class='tm-image uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10 uk-position-relative'>
-				<img src='{{ row.image }}' alt='{{ row.model }}'
-					 width='300' height='300'/>
-				{% if row.discount %}
-				<span>{{ row.discount|number_format(0) }}%<br><small>скидка</small></span>
-				{%- endif -%}
-			</div>
-			<div class='uk-width-1-1 uk-width-medium-5-10 uk-width-large-5-10'>
-				<div class='empty-wrapper'>
-					<p>{{ row.content }}</p>
-				</div>
-			</div>
-		</div>
-		<p class='tm-title celebrity uk-text-center'>от {{ row.price|number_format(0) }} рублей!</p>
-		{% include 'chunk|et.sale' %}
-		{%- endif -%}
-
-		{%- if loop.first -%}
-		<table class='tablesaw uk-margin-large-bottom' data-tablesaw-mode='columntoggle'>
-			<thead>
-			<tr>
-				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='persist'>&nbsp;</th>
-				<th scope='col' data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Модель</th>
-				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='6'>Размеры<br/>(ДхШхВ),мм.</th>
-				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='7'>Цена руб.</th>
-				<th scope='col' data-tablesaw-sortable-col data-tablesaw-priority='1'>Цена с уст.</th>
-			</tr>
-			</thead>
-			<tbody>
-			{%- endif -%}
-
-			<tr>
-				<td class='img'>
-				</td>
-				<td class='title'><strong>{{ row.model }}</strong></td>
-				<td>{{ row.size }}</td>
-				<td>{{ row.price|number_format(0) }}</td>
-				<td>{{ (row.price + row.installing_price)|number_format(0) }}</td>
-			</tr>
-
-			{%- if loop.last -%}
-			</tbody>
-		</table>
-		{%- endif -%}
-
-		{%- endfor -%}
-
-
-		<p class='tm-title uk-text-center' id='kesson'>Кессоны. Кессоны для скважины</p>
-
-		{% set ecotankKesson = runSnippet("pdoResources",{
-		"class":"ecotankKesson",
-		"includeContent":1,
-		"limit":15,
-		"totalVar":"total8",
-		"sortby":"rank",
-		"sortdir":"ASC",
-		"return":"json",
-		"where":'{}'
-		}) %}
-
-		{% set ecotankKesson = fromJson(ecotankKesson) %}
-		{#{ log(ecotankKesson) }#}
-
-		{%- for row in ecotankKesson -%}
 
 		{% if row.main %}
 		<div class='tm-middle-present uk-grid uk-margin-large-bottom'>
