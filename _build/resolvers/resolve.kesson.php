@@ -28,7 +28,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'weight'           => 85,
             'price'            => 25500,
             'old_price'        => 35500,
-            'installing_price' => 8000,
+            'installing_price' => 15000,
             'discount'         => '30%',
 
             'description' => '',
@@ -65,7 +65,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'weight'           => 130,
             'price'            => 27500,
             'old_price'        => 37500,
-            'installing_price' => 10000,
+            'installing_price' => 19000,
             'discount'         => '30%',
 
             'description' => '',
@@ -92,7 +92,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'weight'           => 220,
             'price'            => 71000,
             'old_price'        => 82000,
-            'installing_price' => 16000,
+            'installing_price' => 25000,
             'discount'         => '30%',
 
             'description' => '',
@@ -119,7 +119,7 @@ switch ($options[xPDOTransport::PACKAGE_ACTION]) {
             'weight'           => 300,
             'price'            => 114000,
             'old_price'        => 130000,
-            'installing_price' => 26000,
+            'installing_price' => 35000,
             'discount'         => '30%',
 
             'description' => '',
