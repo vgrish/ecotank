@@ -135,8 +135,9 @@ switch (@$options[xPDOTransport::PACKAGE_ACTION]) {
     case xPDOTransport::ACTION_UPGRADE:
 
         $packages = array(
-            'Twiggy'  => '1.0.0-beta',
-            'Console' => '1.0.0-beta'
+            'Twiggy'      => '1.0.0-beta',
+            'Console'     => '1.0.0-beta',
+            'GeoLocation' => '1.2.1-beta',
         );
 
         foreach ($packages as $package_name => $version) {

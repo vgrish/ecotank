@@ -694,6 +694,18 @@
 
 	</div>
 	<footer>
+		{% set region = getPlaceholder('gl.real.region.name_ru') %}
+		<!-- {{ region }} -->
+		<p class='tm-title uk-text-center' id='contact'>Контакты</p>
+		<div class='tm-text uk-width-1-1'>
+			{% if region == 'Ивановская область' %}
+			Бизнес центр "Европейский" Иваново, ул. Лежневская, 199
+			{% elseif region == 'Нижегородская область' %}
+			Нижний Новгород, ул. Свободы, 63/1
+			{% else %}
+
+			{% endif %}
+		</div>
 		<div class='tm-number uk-width-1-1'>
 			{{ modx.config['ecotank_phone'] }}, {{ modx.config['ecotank_phone2'] }}
 		</div>
