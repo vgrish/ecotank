@@ -713,8 +713,16 @@
 		<div class='tm-number uk-width-1-1'>
 			{{ modx.config['ecotank_phone'] }}, {{ modx.config['ecotank_phone2'] }}
 		</div>
+		<div class='tm-text uk-width-1-1'>
+			{% if region == 'Ивановская область' %}
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ivbJY11PmS7rZFN33Tq8gCXyR5JPDX_v&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+			{% elseif region == 'Нижегородская область' %}
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0fb1kvN_El-9ZLmUt0spZ4e7h6eGSXcS&width=958&height=400&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+			{% else %}
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=H5FGIEjuQ5i7KnxRVhx8lF6KV8525wvS&width=958&height=400&lang=ru_RU&sourceType=constructor&scroll=true"></script>{% endif %}
+		</div>
 
-		<div class='tm-extra' style='border: none;'>
+		<div class='tm-extra'>
 			<p class='name'>
 				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/logos/eco-tank.jpg'
 					 alt='{{ modx.config['site_name'] }}'
