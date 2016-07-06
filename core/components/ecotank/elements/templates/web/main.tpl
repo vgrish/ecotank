@@ -694,6 +694,10 @@
 
 	</div>
 	<footer>
+		<div class='tm-text'>
+			{{ modx.resource.introtext }}
+		</div>
+
 		{% set region = getPlaceholder('gl.real.region.name_ru') %}
 		<!-- {{ region }} -->
 		<p class='tm-title uk-text-center' id='contact'>Контакты</p>
@@ -709,10 +713,8 @@
 		<div class='tm-number uk-width-1-1'>
 			{{ modx.config['ecotank_phone'] }}, {{ modx.config['ecotank_phone2'] }}
 		</div>
-		<div class='tm-text'>
-			{{ modx.resource.introtext }}
-		</div>
-		<div class='tm-extra'>
+
+		<div class='tm-extra' style='border: none;'>
 			<p class='name'>
 				<img src='{{ modx.config['ecotank_assets_url'] }}inc/img/elements/logos/eco-tank.jpg'
 					 alt='{{ modx.config['site_name'] }}'
