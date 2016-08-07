@@ -36,6 +36,11 @@ header .tm-number{padding:15px 0;border-bottom:1px solid #ccc;font-size:18px;bac
 .tablesaw tbody td{font-size:14px;line-height:20px!important}
 .tablesaw tbody td.title strong{display:block}
 
+.tm-reviews{padding:0 4%;}
+.tm-reviews div{margin: 25px auto;max-width: 800px;}
+.tm-reviews p.date{font-size:18px;font-weight:bold;margin-bottom:5px;color:#f15952;}
+.tm-reviews p.date span{font-weight:normal;margin-left:10px;color:#2b2b2b;}
+
 footer{margin:20px 0 10px;text-align:center;padding:0 25px}
 footer .tm-extra{margin:35px auto 0;border-top:1px solid #ccc;padding:15px 0 0}
 footer .tm-extra p{margin:10px auto}

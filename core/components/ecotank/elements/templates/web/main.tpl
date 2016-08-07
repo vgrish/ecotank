@@ -698,9 +698,43 @@
 			{{ modx.resource.introtext }}
 		</div>
 
+		<p class='tm-title uk-text-center uk-margin-large-top' id='review'>Отзывы - {{ modx.config['site_name'] }}</p>
+
+		<div class='tm-reviews uk-width-1-1 uk-margin-large-top'>
+			<div>
+				<p class="date">Татьяна Геннадиевна <span>12.06.2015</span>
+				<p>Добрый день! Хотелось бы поделиться своим опытом в общениии с компанией «Эко-Танк».
+					Я позвонила 1 июня для консультации, где получила всю интересующую меня информацию.
+					На следующий день к нам на дачу приехал инженер из этой компании, и на месте посмотрел где и как все монтировать.
+					Мы согласились и уже в выходные приехала бригада и все установила «под ключ».
+					Все быстро, аккуратно, а главное — очень демократичные цены по сравнению с другими фирмами!
+					Только хорошие отзывы и впечатление от работы с ними!</p>
+			</div>
+
+			<div>
+				<p class="date">Елена Павловна <span>28.08.2015</span></p>
+				<p>Здравствуйте! Не люблю писать отзывы, но тут напишу. Во-первых, полностью согласна с предыдущем отзывом.
+					Все быстро, аккуратно. Во-вторых, у нас возникла проблема с грунтовыми водами, так они сразу нашли трактор и сделали все равно за 1 день.
+					Нам от этого никаких сложностей не прибавилось. Спасибо за отличную работу компании «Эко-танк»!
+					Все быстро, аккуратно, а главное — очень демократичные цены по сравнению с другими фирмами!
+					Только хорошие отзывы и впечатление от работы с ними!</p>
+			</div>
+
+			<div>
+				<p class="date">Светлана <span>17.07.2016</span></p>
+				<p>Здравствуйте! Не знаю почему тут так мало отзывов! Мы обратились к компании «Эко-танк» исключительно по рекомендации наших соседей.
+					Мы уже четвертые, кто в нашей деревне устанавливали септик через «Эко-танк».
+					Только услышав от близких знакомых положительные отзывы, решили обратиться. И ни капли не пожалели.
+					Все в срок, на участке после них чисто, и сплошная экономия. Я конечно послушала соседей, но и сама искала сравнение с другими фирмами.
+					У «Эко-танк» и септики дешевле, и установка. Так что лучшего выбора я не вижу! Спасибо!</p>
+			</div>
+		</div>
+
+
+
 		{% set region = getPlaceholder('gl.real.region.name_ru') %}
 		<!-- {{ region }} -->
-		<p class='tm-title uk-text-center' id='contact'>Контакты</p>
+		<p class='tm-title uk-text-center uk-margin-large-top' id='contact'>Контакты</p>
 		<div class='tm-text uk-width-1-1'>
 			{% if region == 'Ивановская область' %}
 			Бизнес центр "Европейский" Иваново, ул. Лежневская, 199
@@ -713,13 +747,13 @@
 		<div class='tm-number uk-width-1-1'>
 			{{ modx.config['ecotank_phone'] }}, {{ modx.config['ecotank_phone2'] }}
 		</div>
-		<div class='tm-text uk-width-1-1'>
+		<div class='uk-width-1-1'>
 			{% if region == 'Ивановская область' %}
 			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ivbJY11PmS7rZFN33Tq8gCXyR5JPDX_v&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true"></script>
 			{% elseif region == 'Нижегородская область' %}
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0fb1kvN_El-9ZLmUt0spZ4e7h6eGSXcS&width=958&height=400&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0fb1kvN_El-9ZLmUt0spZ4e7h6eGSXcS&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true"></script>
 			{% else %}
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=H5FGIEjuQ5i7KnxRVhx8lF6KV8525wvS&width=958&height=400&lang=ru_RU&sourceType=constructor&scroll=true"></script>{% endif %}
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=H5FGIEjuQ5i7KnxRVhx8lF6KV8525wvS&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true"></script>{% endif %}
 		</div>
 
 		<div class='tm-extra'>
